@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,500,600,700,800|Play:400,700|Quantico:400,700');
 body {
     background-color: rgb(206, 206, 255);
+    font-family: Play;
 }
 
 #outer-circle {
@@ -25,14 +27,88 @@ body {
     box-sizing: border-box;
 }
 
+#title {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#switches {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .toggle {
     margin: 0 20px;
 }
 
 .button {
-    padding: 5px;
+    padding: 7px;
     border-radius: 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
     background-color: rgb(216, 216, 216);
+    margin: 0 6px;
 }
+
+.text1>span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text1>span:first-of-type {
+    padding-right: 40px;
+}
+
+.text1>span:last-of-type {
+    padding-left: 40px;
+}
+
+#turn {
+    background-color: #330000;
+    color: red;
+    height: 30px;
+    width: 50px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-family: Quantico;
+    font-size: 20px;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.playElem {
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+
+#topleft {
+    background-color: rgb(0, 107, 62);
+    border-radius: 250px 0 0 0;
+}
+
+#topright {
+    background-color: rgb(151, 0, 33);
+    border-radius: 0 250px 0 0;
+}
+
+#bottomleft {
+    background-color: rgb(133, 113, 1);
+    border-radius: 0 0 0 250px;
+}
+
+#bottomright {
+    background-color: rgb(0, 59, 107);
+    border-radius: 0 0 250px 0;
+}
+
+
+
 
