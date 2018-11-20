@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(206, 206, 255);
+}
+
+#outer-circle {
+    position: relative;
+    background-color: #385a94;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border: 10px solid black;
+    margin: 60px auto auto auto;
+    box-shadow: 8px 8px 15px 5px #888888;
+}
+
+#inner-circle {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(151, 151, 151);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.toggle {
+    margin: 0 20px;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    background-color: rgb(216, 216, 216);
+}
+
