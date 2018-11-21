@@ -87,6 +87,8 @@ body {
     height: 50%;
     width: 50%;
     float: left;
+    border: 5px solid black;
+    box-sizing: border-box;
 }
 
 #topleft {
