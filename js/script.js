@@ -93,18 +93,38 @@ function gameTurn () {
 }
 
 function one() {
+    if (noise) {
+        let audio = document.getElementById("sound1");
+        audio.play();
+    }
+    noise = true;
     topLeft.style.backgroundColor = lightgreen;
 }
 
 function two() {
+    if (noise) {
+        let audio = document.getElementById("sound2");
+        audio.play();
+    }
+    noise = true;
     topRight.style.backgroundColor = lightred;
 }
 
 function three() {
+    if (noise) {
+        let audio = document.getElementById("sound3");
+        audio.play();
+    }
+    noise = true;
     bottomLeft.style.backgroundColor = lightyellow;
 }
 
 function four() {
+    if (noise) {
+        let audio = document.getElementById("sound4");
+        audio.play();
+    }
+    noise = true;
     bottomRight.style.backgroundColor = lightblue;
 }
 
@@ -196,7 +216,7 @@ function check() {
                 intervalId = setInterval(gameTurn, 800);
             }
         }, 800);
-        // noise = false;
+        noise = false;
     }
     if (turn === playerOrder.length && good && !win) {
         turn++;
